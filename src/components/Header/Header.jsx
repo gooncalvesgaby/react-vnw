@@ -1,12 +1,11 @@
 import Logo from "./barbearia.png"
-// import "./App.css"
 
 function Header(){
     return(
     <>
     <div className="meu-header">
         <h2 className="cortes">Cortes Femininos</h2>
-        <img src={Logo} alt="logo da barbearia do careca" /> 
+        <img src={Logo} alt="logo da barbearia do careca"/> 
         <h2 className="cortes">Cortes Masculinos</h2>
     </div>    
     </>
