@@ -1,6 +1,7 @@
 import Elvis from "./elvis.jpg"
 import Xuxa from "./xuxa.jpg"
 import Leonardo from "./leonardo.jpg"
+import "./Main.css"
 
 function Main(){
     return(

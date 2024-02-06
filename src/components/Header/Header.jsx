@@ -1,4 +1,5 @@
 import Logo from "./barbearia.png"
+import "./Header.css"
 
 function Header(){
     return(

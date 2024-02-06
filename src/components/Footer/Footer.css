@@ -1,0 +1,21 @@
+.meu-footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.informacao {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.listas {
+  color: white;
+  list-style: none;
+}
+
+.bandeiras {
+  height: 12vh;
+  padding: 5%;
+}
+

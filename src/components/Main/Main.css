@@ -1,0 +1,27 @@
+.containers {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10%;
+    background-color: #a9a9a926;
+  }
+
+  .foto-cortes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titulo-cortes {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .estilo-corte {
+    width: 20vw;
+    height: 70%;
+  }
+
+  .agendar {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    background-color: black;
+  }
