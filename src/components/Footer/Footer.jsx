@@ -1,6 +1,14 @@
+
 import Bandeiras from "./bandeiras.png"
 import "./Footer.css"
 function Footer(){
+
+    const Mensagem = () => {
+        setTimeout (()=> {
+            alert("Você ganhou uma hidratação grátis!")
+        }, 2000)
+    }
+
     return (
         <>
         <div className="meu-footer">
@@ -10,6 +18,10 @@ function Footer(){
                 <li className="listas">Nossos profissionais.</li>
                 <li className="listas">Serviços</li>
             </ol>
+            </div>
+
+            <div>
+                <button onClick={Mensagem} className="mensagem">CLIQUE E GANHE</button>
             </div>
 
             <div>
