@@ -1,11 +1,23 @@
-
+import React, {useState} from "react";
 import Elvis from "./elvis.jpg"
 import Xuxa from "./xuxa.jpg"
 import Leonardo from "./leonardo.jpg"
 import "./Main.css"
 
-
 function Main(){
+
+  const [numero, setNumero] = useState(0)
+  const Add = () => {
+    setTimeout(() => {
+      setNumero(numero + 1)
+    }, 1000)
+  }
+
+  const Remover = () => {
+    setTimeout(() => {
+      setNumero(numero - 1)
+    }, 1000)
+  }
     return(
     <>
      <div className="containers">
@@ -29,7 +41,14 @@ function Main(){
         <h2 className="titulo-cortes"> R$ 30,00 </h2>
         <button className="agendar">Adicionar</button>
        </div>
-     </div>   
+     </div>
+
+     <div className="contadores">
+      <h2>Quantos cortes você já fez?</h2>
+      <h3 className="numero">{numero}</h3>
+      <button className="btns-cortes" onClick={Add}>+</button>
+      <button className="btns-cortes" onClick={Remover}>-</button>
+     </div>      
     </>
     )
 }
