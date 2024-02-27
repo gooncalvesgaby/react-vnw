@@ -44,10 +44,15 @@ function Main(){
      </div>
 
      <div className="contadores">
-      <h2>Quantos cortes você já fez?</h2>
-      <h3 className="numero">{numero}</h3>
-      <button className="btns-cortes" onClick={Add}>+</button>
-      <button className="btns-cortes" onClick={Remover}>-</button>
+      <div>
+        <h2>Quantos cortes você já fez com a gente?</h2>
+        <h3 className="numero">{numero}</h3>
+        <button className="btns-cortes" onClick={Add}>+</button>
+        <button className="btns-cortes" onClick={Remover}>-</button>
+      </div> 
+      <div>
+        <h2 className="cronometro">Clique e ative o cronômetro!</h2>
+      </div>    
      </div>      
     </>
     )
