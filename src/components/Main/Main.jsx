@@ -15,8 +15,12 @@ function Main(){
 
   const Remover = () => {
     setTimeout(() => {
-      setNumero(numero - 1)
+      if(numero > 0){
+        setNumero(numero - 1)
+      }
     }, 1000)
+    console.log(numero)
+  
   }
     return(
     <>
