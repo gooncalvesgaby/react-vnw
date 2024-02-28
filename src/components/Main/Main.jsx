@@ -23,6 +23,12 @@ function Main(){
   
   }
 
+  const Limpar = () => {
+    setTimeout(() => {
+      setNumero(0)
+    }, 1000)
+  }
+
   const [valor, setValor] = useState(0)
   const [Parando, setParando] = useState()
 
@@ -36,7 +42,6 @@ function Main(){
   }
 
   const PararContagem = () => clearInterval(Parando)
-
 
     return(
     <>
@@ -70,12 +75,15 @@ function Main(){
         <h3 className="numero">{numero}</h3>
         <button className="btns-cortes" onClick={Add}>+</button>
         <button className="btns-cortes" onClick={Remover}>-</button>
+        <button className="btns-cortes" onClick={Limpar}>Limpar</button>
       </div> 
       <div>
         <h2>Clique e ative o cronômetro!</h2>
         <h3 className="numero">{valor}</h3>
         <button className="btns-cortes" onClick={Iniciar}>Iniciar</button>
         <button className="btns-cortes" onClick={PararContagem}>Parar</button>
+        <button className="btns-cortes">Zerar</button> 
+        {/* linha 85 ainda em desenvovimento */}
       </div>    
      </div>      
     </>
