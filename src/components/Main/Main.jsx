@@ -22,6 +22,22 @@ function Main(){
     console.log(numero)
   
   }
+
+  const [valor, setValor] = useState(0)
+  const [Parando, setParando] = useState()
+
+  const Iniciar = () => {
+    const guardarIntervalo = setInterval (() => {
+      setValor((valor) => valor + 1)
+    }, 1000)
+
+    setParando(guardarIntervalo)
+
+  }
+
+  const PararContagem = () => clearInterval(Parando)
+
+
     return(
     <>
      <div className="containers">
@@ -44,6 +60,7 @@ function Main(){
         <h2 className="titulo-cortes">Corte Leonardo</h2>
         <h2 className="titulo-cortes"> R$ 30,00 </h2>
         <button className="agendar">Adicionar</button>
+        
        </div>
      </div>
 
@@ -55,7 +72,10 @@ function Main(){
         <button className="btns-cortes" onClick={Remover}>-</button>
       </div> 
       <div>
-        <h2 className="cronometro">Clique e ative o cronômetro!</h2>
+        <h2>Clique e ative o cronômetro!</h2>
+        <h3 className="numero">{valor}</h3>
+        <button className="btns-cortes" onClick={Iniciar}>Iniciar</button>
+        <button className="btns-cortes" onClick={PararContagem}>Parar</button>
       </div>    
      </div>      
     </>
